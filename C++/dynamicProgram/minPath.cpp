@@ -6,11 +6,20 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:49:16 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/14 22:40:07 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/14 23:11:27 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
+
+/*
+Problem: Given an $n \times m$ two-dimensional grid grid, where each cell 
+in the grid contains a non-negative integer representing the cost of 
+that cell, a robot starts at the top-left corner and can only move 
+one step down or one step right at a time, until it reaches the bottom-right 
+corner. Return the minimum path sum from the top-left corner to the 
+bottom-right corner.
+*/
 
 class minPath {
     private:
