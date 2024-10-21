@@ -6,12 +6,16 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:49:16 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/14 23:11:27 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 14:18:18 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
 
+/*
+给定一个 $n \times m$ 的二维网格 `grid` ，网格中的每个单元格包含一个非负整数，表示该单元格的代价。
+机器人以左上角单元格为起始点，每次只能向下或者向右移动一步，直至到达右下角单元格。请返回从左上角到右下角的最小路径和。
+*/
 /*
 Problem: Given an $n \times m$ two-dimensional grid grid, where each cell 
 in the grid contains a non-negative integer representing the cost of 

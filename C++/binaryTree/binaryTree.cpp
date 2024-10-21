@@ -6,11 +6,16 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 11:17:31 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/13 14:33:08 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:06:19 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
+
+/*
+给定一棵二叉树的前序遍历 `preorder` 和中序遍历 `inorder` 
+请从中构建二叉树，返回二叉树的根节点。假设二叉树中没有值重复的节点
+*/
 
 treeNode *dfs(vector<int> &preorder, unordered_map<int, int> &inorderMap, \
                                                     int i, int l, int r) {

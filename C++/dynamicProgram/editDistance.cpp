@@ -6,12 +6,16 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 23:54:37 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/15 00:52:48 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 14:13:46 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
 
+/*
+输入两个字符串 $s$ 和 $t$ ，返回将 $s$ 转换为 $t$ 所需的最少编辑步数。
+你可以在一个字符串中进行三种编辑操作：插入一个字符、删除一个字符、将字符替换为任意一个字符。
+*/
 /*
 The edit distance problem. Given two strings $s$ and $t$, return 
 the minimum number of editing steps required to transform $s$ into $t$. 

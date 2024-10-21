@@ -6,12 +6,16 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 22:55:11 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/15 23:40:14 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 13:59:10 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
 
+/*
+给定 $n$ 个物品，第 $i$ 个物品的重量为 $wgt[i-1]$、价值为 $val[i-1]$ ，和一个容量为 $cap$ 的背包。
+每个物品只能选择一次，问在限定背包容量下能放入物品的最大价值。
+*/
 class knapSack {
     private:
         int n; //number of items

@@ -6,12 +6,16 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 19:47:05 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/13 20:32:11 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:02:32 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/algo.hpp"
 
+/*
+分治算法求解汉诺塔问题 
+divide and conquer algorithm to solve the Tower of Hanoi problem
+*/
 class HanoiTower {
     private:
         vector<int> A;

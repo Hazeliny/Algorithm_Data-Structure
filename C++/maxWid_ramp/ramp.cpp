@@ -6,13 +6,17 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 22:01:16 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/10 23:29:11 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:13:45 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <vector>
 // monotonic stack
+/*
+最大宽度坡度问题，给定一个整数数组 nums，找出满足条件的坡度 (i, j) 使得 nums[i] <= nums[j]
+并且坡度的宽度 j - i 最大化
+*/
 class Solution {
     public:
         int maxWidthRamp(vector<int>& nums) {

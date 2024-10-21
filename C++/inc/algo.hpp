@@ -6,7 +6,7 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 12:19:21 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/13 14:48:30 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 21:19:00 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string>
 #include <sstream>
 #include <unordered_map>
+#include <stdexcept>
 
 using namespace std;
 
@@ -98,4 +99,11 @@ template <typename T> string getVectorString(vector<T> &list) {
 
 template <typename T> void printVector(vector<T> list) {
     cout << getVectorString(list) << '\n';
+}
+
+// 顶点类
+struct Vertex {
+    int val;
+    Vertex(int x) : val(x) {
+    }
 }

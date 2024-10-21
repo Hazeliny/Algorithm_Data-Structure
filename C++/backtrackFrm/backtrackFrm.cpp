@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   backtrackFrm.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: linyao <linyao@student.42barcelona.co      +#+  +:+       +#+        */
+/*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 15:00:53 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/12 15:00:57 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:09:59 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* backtrack frame */
+/* 回溯算法框架 backtrack frame */
 void    backtrack(State *state, vector<Choice *> &choices, vector<State *> &res) {
     if (isSolution(state)) {
         // record the solution

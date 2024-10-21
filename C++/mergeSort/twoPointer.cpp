@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   twoPointer.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: linyao <linyao@student.42barcelona.co      +#+  +:+       +#+        */
+/*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 12:05:16 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/11 12:05:21 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:03:44 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <vector>
 
+/*
+归并排序
+*/
 class Solution {
     public:
         void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {

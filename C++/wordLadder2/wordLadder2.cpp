@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   wordLadder2.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: linyao <linyao@student.42barcelona.co      +#+  +:+       +#+        */
+/*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:26:36 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/12 11:26:39 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:59:35 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <vector>
 
+/*
+单词接龙II问题，它不仅要找到从 beginWord 到 endWord 的最短转换序列，还需要返回所有这些最短路径。
+该问题可以被看作是一个图上的最短路径搜索问题，其中单词是图中的节点，如果两个单词仅有一个字母不同，那么它们之间有一条边。
+时间复杂度：O(N^2 * L) 空间复杂度：O(N * L)
+*/
 class Solution {
     public:
     bool valid(string s, string t) {
@@ -110,6 +115,7 @@ class Solution {
 
         vector<vector<int>> parent[n], path;
 
+        //construct the graph g
         // when each adjacent pair of words in the wordList differs 
         // by only one letter, establish a bidirectional edge
         for (int i = 0; i < n - 1; i++) {
