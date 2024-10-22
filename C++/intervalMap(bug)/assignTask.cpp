@@ -89,12 +89,12 @@ void intervalMapTest() {
 	std::cout << "2 " << valueAt0 << " " << valueAt1 << " " << valueAt2 << " " << valueAt3 << " " << valueAt4 << std::endl;
 
 	imap.assign(2, 4, 'B');
-    valueAt0 = imap[0];
-    valueAt1 = imap[1];
-    valueAt2 = imap[2];
-    valueAt3 = imap[3];
-    valueAt4 = imap[4];
-    std::cout << "3 " << valueAt0 << " " << valueAt1 << " " << valueAt2 << " " << valueAt3 << " " << valueAt4 << std::endl;
+	valueAt0 = imap[0];
+	valueAt1 = imap[1];
+	valueAt2 = imap[2];
+	valueAt3 = imap[3];
+	valueAt4 = imap[4];
+	std::cout << "3 " << valueAt0 << " " << valueAt1 << " " << valueAt2 << " " << valueAt3 << " " << valueAt4 << std::endl;
 }
 int main() {
 	intervalMapTest();

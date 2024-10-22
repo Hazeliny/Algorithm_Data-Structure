@@ -6,7 +6,7 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 12:19:21 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/17 21:19:00 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/22 23:42:02 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,4 +106,16 @@ struct Vertex {
     int val;
     Vertex(int x) : val(x) {
     }
+};
+
+// ------------------------ print array ------------------------
+template <typename T> 
+void printArray(T *arr, int n) {
+    cout << "[";
+    for (int i = 0; i < n - 1; i++)
+        cout << arr[i] << ", ";
+    if (n >= 1)
+        cout << arr[n - 1] << "]" << endl;
+    else
+        cout << "]" << endl;
 }
