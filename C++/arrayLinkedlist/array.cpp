@@ -111,7 +111,5 @@ int main() {
     cout << "Enlarge the array length to " << nums1.getSize() << ", resulting in arr = ";
     printArray(nums1.getArray(), nums1.getSize());
 
-    delete[] arrx;
-    delete[] numsx;
     return (0);
 }
