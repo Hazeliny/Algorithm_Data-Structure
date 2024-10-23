@@ -6,7 +6,7 @@
 /*   By: linyao <linyao@student.42barcelona.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 12:19:21 by linyao            #+#    #+#             */
-/*   Updated: 2024/10/22 23:42:02 by linyao           ###   ########.fr       */
+/*   Updated: 2024/10/24 00:10:40 by linyao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,3 +119,10 @@ void printArray(T *arr, int n) {
     else
         cout << "]" << endl;
 }
+/*
+struct listNode {
+    int val;
+    listNode *next;
+    listNode(int x) : val(x), next(nullptr) {} // constructor
+};
+*/
