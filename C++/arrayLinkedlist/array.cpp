@@ -35,6 +35,41 @@ class Arrays {
             int randomNum = arr[randomIndex];
             return (randomNum);
         }
+        void insert(int num, int index) {
+            for (int i = size - 1; i > index; i--)
+                arr[i] = arr[i - 1];
+            arr[index] = num;
+        }
+        void remove(int index) {
+            for (int i = index; i < size - 1; i++)
+                arr[i] = arr[i + 1];
+            arr[size - 1] = 0;
+        }
+        int traverse() {
+            int count = 0;
+            for (int i = 0; i < size; i++)
+                count += arr[i];
+            return (count);
+        }
+        // serach a specified element in the array, return its index
+        int find(int target) {
+            for (int i = 0; i < size; i++) {
+                if (arr[i] == target)
+                    return (i);
+            }
+            return (-1);
+        }
+        void extend(int enlarge) {
+            int newSize = size + enlarge;
+            int *res = new int[newSize];
+            for (int i = 0; i < size; i++)
+                res[i] = arr[i];
+            for (int i = size; i < newSize; i++)
+                res[i] = 0;
+            delete[] arr;
+            size = newSize;
+            arr = res; 
+        }
 };
 
 int main() {
@@ -52,6 +87,29 @@ int main() {
     // Random access
     int randomNum = nums1.randomAccess();
     cout << "Get a random element from nums = " << randomNum << endl;
+
+    // insert element
+    nums1.insert(6, 3);
+    cout << "Insert the number 6 at index 3, resulting in nums = ";
+    printArray(nums1.getArray(), nums1.getSize());
+
+    // remove element
+    nums1.remove(2);
+    cout << "Remove the element at index 2, resulting in nums = ";
+    printArray(nums1.getArray(), nums1.getSize());
+
+    //traverse array
+    int count = nums1.traverse();
+    cout << "Sum of the array = " << count << endl;
+
+    int index =  nums1.find(3);
+    cout << "Find element 3 in nums array, index = " << index << endl;
+
+    // length extension
+    int enlarge = 3;
+    nums1.extend(enlarge);
+    cout << "Enlarge the array length to " << nums1.getSize() << ", resulting in arr = ";
+    printArray(nums1.getArray(), nums1.getSize());
 
     delete[] arrx;
     delete[] numsx;
