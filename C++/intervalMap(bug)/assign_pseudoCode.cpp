@@ -1,3 +1,0 @@
-
-	if (!(keyBegin < keyEnd))
-		return ;
