@@ -51,19 +51,19 @@ The representation in the *std::map* must be canonical, that is, consecutive map
 You are given the following source code:
 
 
-#include `<map>`
+`#include `<map>``
 
 `template<typename K, typename V>`
 
 `class interval_map {`
 
-	friend void IntervalMapTest();
+	`friend void IntervalMapTest();`
  
-	V m_valBegin;
+	`V m_valBegin;`
  
-	std::map<K,V> m_map;
+	`std::map<K,V> m_map;`
  
-public:
+`public:`
 
 	// constructor associates whole range of K with val
  
@@ -101,15 +101,15 @@ public:
 			return (--it)->second;
 		}
 	}
-};
+`};`
 
-// Consider using a randomized test
+`// Consider using a randomized test`
 
-// to discover the cases that your implementation does not handle correctly.
+`// to discover the cases that your implementation does not handle correctly.`
 
-// We recommend to implement a test function that tests the functionality of
+`// We recommend to implement a test function that tests the functionality of`
 
-// the interval_map, for example using a map of int intervals to char.
+`// the interval_map, for example using a map of int intervals to char.`
 
 
 
