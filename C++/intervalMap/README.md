@@ -50,8 +50,11 @@ The representation in the *std::map* must be canonical, that is, consecutive map
 
 You are given the following source code:
 
+
 // Given codes
+
 #include <map>
+
 template<typename K, typename V>
 class interval_map {
 	friend void IntervalMapTest();
@@ -75,9 +78,11 @@ public:
 		requires (std::is_same<std::remove_cvref_t<V_forward>, V>::value)
 	{
 
-Insert your solution here!
 
-}
+	**Insert your solution here!**
+
+
+	}
 
 	// look-up of the value associated with key
 	V const& operator[]( K const& key ) const {
