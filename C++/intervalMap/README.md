@@ -56,15 +56,25 @@ You are given the following source code:
 #include <map>
 
 template<typename K, typename V>
+
 class interval_map {
+
 	friend void IntervalMapTest();
+ 
 	V m_valBegin;
+ 
 	std::map<K,V> m_map;
+ 
 public:
+
 	// constructor associates whole range of K with val
+ 
 	template<typename V_forward>
+ 
 	interval_map(V_forward&& val)
+ 
 	: m_valBegin(std::forward<V_forward>(val))
+ 
 	{}
 
 	// Assign value val to interval [keyBegin, keyEnd).
@@ -79,7 +89,7 @@ public:
 	{
 
 
-	**Insert your solution here!**
+	****************Insert your solution here!****************
 
 
 	}
@@ -95,10 +105,14 @@ public:
 	}
 };
 
-// Many solutions we receive are incorrect. Consider using a randomized test
+// Consider using a randomized test
+
 // to discover the cases that your implementation does not handle correctly.
+
 // We recommend to implement a test function that tests the functionality of
+
 // the interval_map, for example using a map of int intervals to char.
+
 
 Your task is to implement the function *assign*. Your implementation is graded according to the following criteria, in this order:
 
