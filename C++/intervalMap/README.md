@@ -51,9 +51,7 @@ The representation in the *std::map* must be canonical, that is, consecutive map
 You are given the following source code:
 
 
-// Given codes
-
-#include<map>
+#include <<map>>
 
 template<typename K, typename V>
 
@@ -112,6 +110,7 @@ public:
 // We recommend to implement a test function that tests the functionality of
 
 // the interval_map, for example using a map of int intervals to char.
+
 
 
 Your task is to implement the function *assign*. Your implementation is graded according to the following criteria, in this order:
