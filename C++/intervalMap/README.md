@@ -51,17 +51,17 @@ The representation in the *std::map* must be canonical, that is, consecutive map
 You are given the following source code:
 
 
-`#include `<map>``
+`#include` `<map>`
 
 `template<typename K, typename V>`
 
 `class interval_map {`
 
-	`friend void IntervalMapTest();`
+	friend void IntervalMapTest();
  
-	`V m_valBegin;`
+	V m_valBegin;
  
-	`std::map<K,V> m_map;`
+	std::map<K,V> m_map;
  
 `public:`
 
