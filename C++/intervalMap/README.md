@@ -53,9 +53,9 @@ You are given the following source code:
 
 #include `<map>`
 
-template<typename K, typename V>
+`template<typename K, typename V>`
 
-class interval_map {
+`class interval_map {`
 
 	friend void IntervalMapTest();
  
