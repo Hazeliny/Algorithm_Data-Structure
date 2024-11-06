@@ -50,6 +50,7 @@ The representation in the *std::map* must be canonical, that is, consecutive map
 
 You are given the following source code:
 
+// Given codes
 #include <map>
 template<typename K, typename V>
 class interval_map {
