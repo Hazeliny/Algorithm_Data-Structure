@@ -10,13 +10,19 @@ Example: Let M be an instance of interval_map<int,char> where
 
 M.m_valBegin=='A',
 M.m_map=={ (1,'B'), (3,'A') },
+
 Then M represents the mapping
 
 ...
+
 -2 -> 'A'
+
 -1 -> 'A'
+
 0 -> 'A'
+
 1 -> 'B'
+
 2 -> 'B'
 3 -> 'A'
 4 -> 'A'
